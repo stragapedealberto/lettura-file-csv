@@ -47,7 +47,7 @@
             $row = fgets($file);
             $element = explode("," , $row);
 
-            if($element[0] === "timestamp"){
+            if($element === "timestamp"){
                 echo "<tr><th>" . $element[0] . "</th><th>" . $element[1] . "</th><th>". $element[2] .
                 "</th><th>" . $element[3] . "</th><th>" . $element[4] . "</th><th>" . $element[5] .
                 "</th><th>" . $element[6] . "</th><th>" . $element[7] . "</th><th>" . $element[8] . "</th></tr>";
